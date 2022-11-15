@@ -63,8 +63,8 @@ const windowLoaded = () => {
     if (oldHref != document.location.href) {
       oldHref = document.location.href;
       pageChanged = true;
-      clearTimeout(timer);
-      doPost();
+      if(timer) clearTimeout(timer);
+      doUpdate();
       window.requestAnimationFrame(function () {
         let tmp = document.querySelector("body");
         if (tmp != bodyDOM) {

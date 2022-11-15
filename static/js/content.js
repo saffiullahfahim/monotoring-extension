@@ -82,3 +82,4 @@ const windowLoaded = () => {
 };
 
 window.addEventListener("load", windowLoaded);
+window.addEventListener('hashchange', windowLoaded);

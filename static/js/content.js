@@ -1,6 +1,6 @@
 let pageChanged = false;
 let timer;
-const monitorLink = "https://wow.run-us-west2.goorm.io"
+const monitorLink = "https://api.saffiullahfahim.me"
 
 const doPost = (url, payload) => {
   return fetch(url, {
